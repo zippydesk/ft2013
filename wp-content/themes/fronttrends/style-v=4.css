@@ -1,0 +1,1707 @@
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,talk
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,wi
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a {
+  color: #eb212e;
+}
+a:focus {
+  outline: thin dotted;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+
+  font-size: 100%;
+  /* 2 */
+
+  margin: 0;
+  /* 3 */
+
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+
+  vertical-align: top;
+  /* 2 */
+
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on November 17, 2011 */
+@font-face {
+  font-family: 'League Gothic';
+  src: url('fonts/LeagueGothic-.eot') format('eot'), url('fonts/LeagueGothic.woff') format('woff'), url('fonts/LeagueGothic.ttf') format('truetype'), url('fonts/leaguegothic-regular-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font: 1.4rem 'Open Sans', sans-serif;
+  height: 100%;
+}
+nav {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 666;
+  background: #fff;
+  border-bottom: 0.6rem solid #cccccc;
+}
+
+nav h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #878787;
+  font-size: 1.4rem;
+  margin: 0;
+}
+nav a {
+  color: #5e5e5e;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav a:active {
+  color: #f2142b;
+}
+nav ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  text-align: center;
+}
+nav ul li.current_page_item a {
+  color: #f2142b;
+}
+nav ul li.home, nav ul li.menu-item-188 {
+  position: absolute;
+  left: 50%;
+  margin-left: -33px;
+  padding: 0;
+  top: 12px;
+}
+nav ul li.menu-item-188 a {
+  display: block;
+  width: 66px;
+  height: 56px;
+  background: transparent url("img/small-logo.png") no-repeat;
+  text-indent: 9999rem;
+  overflow: hidden;
+}
+
+nav ul.five li:nth-child(5) {
+  margin-left: 80px;
+}
+nav ul.five li:nth-child(4) {
+  margin-right: 80px;
+}
+nav select {
+  margin: 3% 5%;
+  width: 90%;
+  color: #000000;
+}
+nav select option {
+  text-transform: uppercase;
+}
+article h1,
+section h1 {
+  font: 400 4rem 'League Gothic', Tahoma, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  text-shadow: 0.4rem 0.4rem 0 rgba(212, 217, 222, 0.3);
+}
+article h1:before,
+section h1:before,
+article h1:after,
+section h1:after {
+  display: none;
+}
+article {
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+}
+article h2 {
+  margin: 0;
+  color: #eb212e;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+article .page-header {
+  min-height: 200px;
+  width: 100%;
+  padding-top: 125px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+article.speakers {
+  width: 90%;
+  margin: auto;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 2rem;
+}
+article.speakers hgroup {
+  margin-bottom: 40px;
+}
+article.speakers hgroup h1 {
+  color: #000;
+}
+article.speakers section {
+  clear: both;
+  min-height: 93px;
+  width: 100%;
+}
+article.speakers section .left {
+  float: left;
+  width: 30%;
+  
+}
+article.speakers section .left img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+}
+article.speakers section .right {
+  width: 70%;
+  float: right;
+  text-align: left;
+  padding-left: 2rem;
+}
+article.speakers section .right em {
+  font: 400 2rem 'League Gothic', Tahoma, sans-serif;
+  display: block;
+}
+article.speakers section .right em a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+article.speakers section .right small {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+article.hero {
+  color: #fff;
+  border-bottom: 1.2rem solid #eb212e;
+  padding: 14rem 0 5rem;
+  background-image: url("img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+article.hero header {
+  padding-top: 0;
+}
+article.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: none;
+}
+/*
+article.hero h1:before {
+  content: "";
+  display: block;
+  height: 125px;
+  width: 111px;
+  background-color: transparent;
+  background-image: url("img/ft-logo.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  margin-left: -55px;
+}
+*/
+article.hero h1:after {
+  background: none;
+  width: 0;
+  height: 0;
+}
+article.hero h2 {
+  font-size: 1.4rem;
+  color: #b9bec2;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  padding-bottom: 7rem;
+}
+article.hero .feature {
+  font: 400 3.5rem/1.5em 'League Gothic', Tahoma, sans-serif;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  text-shadow: 0.4rem 0.4rem 0 rgba(212, 217, 222, 0.3);
+}
+article.hero .feature em {
+  font-style: normal;
+  color: #aac0d5;
+}
+article.hero .feature:before {
+  content: "";
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  background: #868c90;
+  left: 50%;
+  margin-left: -25px;
+}
+article.hero .feature:before {
+  top: -25px;
+}
+/*
+article.hero .feature:after {
+  bottom: -25px;
+}
+*/
+article h1 {
+  color: #ffffff;
+}
+
+article.speakers-page > header,
+article.schedule-page > header {
+  background-image: url("img/speakers.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+article.speakers-page .speakers-list .left {
+  width: 20%;
+}
+article.speakers-page .speakers-list .left img {
+  border-radius: 50%;
+}
+article.speakers-page .speakers-list .right {
+  width: 60%;
+}
+article.speakers-page .speakers-list h3 {
+  color: #eb212e;
+}
+
+article.about > header {
+  background-image: url("img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+
+article.register > header {
+  background-image: url("img/register.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+article.register > p {
+  display: none;
+}
+article.register div.amiando {
+  background-color: #ddd;
+  border: 2rem solid #f5f5f5;
+  margin-top: 10rem;
+  padding: 2rem 2rem 0;
+}
+article.register .terms,
+article.about .info-sheet {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+article.register .terms h1,
+article.about .info-sheet h1 {
+  color: #000000;
+}
+article.register .terms .left,
+article.register .terms .right,
+article.about .info-sheet .left,
+article.about .info-sheet .right {
+  text-align: left;
+  color: #726f6f;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+article.register .terms .left h1,
+article.register .terms .right h1,
+article.about .info-sheet .left h1,
+article.about .info-sheet .right h1,
+article.about .staff h1 {
+  text-align: left;
+  color: #b3b5b6;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Open Sans", san-serif;
+  letter-spacing: 0.2rem;
+  text-shadow: none;
+  margin: 10px 0;
+}
+article.about .info-sheet .left h1,
+article.about .info-sheet .right h1,
+article.about .staff h1 {
+    color: rgb(235, 33, 46);
+}
+article.about .info-sheet .left h2,
+article.about .info-sheet .right h2,
+article.about .staff h2 {
+    color: #b3b5b6;
+}
+
+article.register .terms .left h1:after,
+article.register .terms .right h1:after,
+article.register .terms .left h1:before,
+article.register .terms .right h1:before,
+article.about .info-sheet .left h1:after,
+article.about .info-sheet .right h1:after,
+article.about .info-sheet .left h1:before,
+article.about .info-sheet .right h1:before,
+article.about .staff h1:before,
+article.about .staff h1:after {
+  content: "";
+  display: none;
+}
+article.register .terms > div:first-of-type {
+  margin-top: 40px;
+}
+article.register .terms .org {
+  font-weight: 700;
+}
+article.sponsors-page {
+  border-bottom: 1.5rem solid #e3e3e3;
+  overflow: hidden;
+}
+article.sponsors-page > header {
+  background-image: url("img/sponsors.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+article.sponsors-page section.sponsorships {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 8rem;
+}
+article.sponsors-page section.sponsorships > header {
+  color: #3b3636;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 6rem 0;
+}
+article.sponsors-page section.sponsorships > article {
+  float: none;
+  width: 100%;
+  clear: both;
+}
+article.sponsors-page section.sponsorships > article > header {
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 4rem 0;
+}
+article.sponsors-page section.sponsorships > article header h2 {
+  font: 400 4rem 'League Gothic', Tahoma, sans-serif;
+  color: #a4a8a9;
+  margin: 0;
+}
+article.sponsors-page section.sponsorships > article header span {
+  color: #eb212e;
+  font: 400 4rem 'League Gothic', Tahoma, sans-serif;
+  line-height: 3rem;
+}
+article.sponsors-page section.sponsorships > article ul {
+  list-style-image: url("img/list-rectangle.png.html");
+  color: #eb212e;
+  text-align: left;
+  padding-left: 2rem;
+}
+article.sponsors-page section.sponsorships > article ul li {
+  color: #3b3636;
+  padding-left: 1rem;
+}
+article.sponsors-page section.sponsorships > article ul li span {
+  display: block;
+  color: #a4a8a9;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+article.sponsors-page section.sponsorships footer {
+  clear: both;
+}
+article.sponsors-page section.sponsorships footer .button {
+  margin-top: 6rem;
+}
+article.sponsors-page section.sponsorships footer .button:after,
+.l-sponsors .sponsor-info .button:after {
+  background: none;
+}
+.list {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+.list a img {
+  margin-right: 20px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.list article {
+  text-align: left;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 6rem;
+}
+.list article p {
+  text-align: justify;
+}
+.list article aside a {
+  background: url("img/globe-icon.png") no-repeat;
+  display: inline-block;
+  padding-left: 20px;
+  color: #a4a8a9;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.list article h2 {
+  font: 400 4rem 'League Gothic', Tahoma, sans-serif;
+  color: #292422;
+}
+.list article h3 {
+  color: #a4a8a9;
+  padding: 0;
+  margin: 0;
+}
+.list > header {
+  text-align: center;
+  padding-bottom: 8rem;
+}
+.sponsors {
+  overflow: hidden;
+  margin: auto;
+  background: #e3e3e3;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.sponsors h1 {
+  color: #000000;
+  margin-top: 5rem;
+}
+.sponsors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sponsors h2 {
+  clear: both;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.venue {
+/*  border-bottom: 1.5rem solid #e3e3e3;
+  padding-top: 8rem;*/
+}
+.venue .city-recommendations::after {
+  background: none;
+}
+.venue section.map h1 {
+  color: #000;
+}
+.venue section.map > div {
+  width: 90%;
+  margin: auto;
+  background-color: #f5f5f5;
+  border: 2rem solid #f5f5f5;
+}
+.venue > header {
+  background-image: url("img/venue.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+/*  padding-top: 3rem;*/
+}
+.venue > header h2 {
+  font: 400 4rem 'League Gothic', Tahoma, sans-serif;
+  color: #fff;
+  padding-top: 0;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+}
+.venue > header h3 {
+  color: #eb212e;
+  margin: 0;
+  padding: 0;
+  font: 400 1.4rem 'Open Sans', Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.venue > header .venue-links {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.venue > header .venue-links a {
+  font: 400 1.4rem 'Open Sans', Tahoma, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: transparent url("img/link-arrow.png") right no-repeat;
+  padding-right: 2rem;
+}
+.venue > header .venue-links a:last-child {
+  padding-left: 3rem;
+}
+section.cityguide section > header > h2,
+section.schedule > h2 {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJElEQVQIW2P89OnTfz4+PkYGJADmoEvAVSBLoGiDSaAIwowCABixE9v+WDKEAAAAAElFTkSuQmCC) repeat;
+  border-top: 0.2rem solid #e5e5e5;
+  border-bottom: 0.2rem solid #e5e5e5;
+  font: 400 4rem 'League Gothic', Tahoma, sans-serif;
+  color: #000;
+  padding: 4rem 0;
+  margin-top: 8rem;
+  clear: both;
+  margin-bottom: 7.5rem;
+}
+section.cityguide {
+  margin-top: 4rem;
+}
+section.cityguide section {
+  overflow: hidden;
+}
+section.cityguide section > header > h2 {
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+section.cityguide section > header > h2 > em,
+section.schedule > h2 em {
+  font: 400 1.4rem 'Open Sans', Tahoma, sans-serif;
+  display: block;
+  font-style: italic;
+  text-transform: none;
+  color: #333537;
+}
+.cityguide {
+  width: 90%;
+  margin: 0 auto;
+}
+.cityguide h1 {
+  color: #000000;
+  margin-top: 5rem;
+}
+.cityguide .view-map {
+  display: block;
+  margin: auto;
+}
+.cityguide .view-map::after {
+  background: none;
+}
+.cityguide section.transport {
+  overflow: hidden;
+  clear: both;
+}
+.cityguide article {
+  text-align: left;
+  padding-bottom: 3rem;
+  padding-right: 0.5rem;
+}
+.cityguide article h3 {
+  display: inline;
+}
+.cityguide article h4 {
+  margin: 0;
+  margin-top: 4rem;
+}
+.cityguide article h3 a,
+.cityguide article h4 {
+  color: #eb212e;
+  font: 400 2rem 'League Gothic', Tahoma, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.cityguide article > header {
+  display: block;
+}
+.cityguide article > header span {
+  color: #a4a8a9;
+  font: 400 1.4rem 'Open Sans', Tahoma, sans-serif;
+  font-style: italic;
+  padding-left: 0.5rem;
+}
+.cityguide article .details a {
+  color: #a4a8a9;
+  font: 400 1.2rem 'Open Sans', Tahoma, sans-serif;
+  text-decoration: none;
+  background: transparent url("img/link-arrow.png") right no-repeat;
+  padding-right: 2rem;
+  margin-right: 0.5rem;
+}
+.cityguide article.public-transport h3,
+.cityguide article.taxi-services h3 {
+  color: #a4a8a9;
+  font-weight: bold;
+  font: 400 1.4rem 'Open Sans', Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+.cityguide article.taxi-services ul {
+  list-style: url("img/list-rectangle.png.html");
+}
+header hgroup h2 {
+  color: #d4d9de;
+  padding-bottom: 3rem;
+}
+body > footer {
+  background-color: #e7e7e7;
+  padding: 5% 10%;
+}
+body > footer p {
+  font-size: 1.2rem;
+  color: #666666;
+  text-align: center;
+}
+body > footer p:nth-child(2) {
+  color: #000000;
+}
+body > footer p.vcard {
+  text-transform: uppercase;
+  font: 400 1.4rem 'League Gothic', Tahoma, sans-serif;
+  letter-spacing: 1px;
+}
+body > footer p.vcard em {
+  font-style: normal;
+}
+body > footer p.vcard em.email {
+  color: #eb212e;
+  margin-right: 20px;
+}
+body > footer p.vcard em.phone {
+  color: #000000;
+}
+.button {
+  position: relative;
+  display: inline-block;
+  width: 256px;
+  border-radius: 5px;
+  border-bottom: 8px solid #c21924;
+  text-align: center;
+  font-size: 16px;
+  line-height: 65px;
+  color: #fff;
+  background-color: #eb212e;
+  text-decoration: none;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -17px;
+  display: block;
+  width: 35px;
+  height: 26px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAaCAYAAAA9rOU8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAopJREFUeNq8ls9LVFEUx2fGl5rO5IxmUy3aNDShCxez0o0LwVXboBYFQhBEiFQQ+B8IIRYZLaJNi8CVgi4EVwPtBBdDkIvEWoS/f5Sj5jxn+h74Tlwf7/rufYwe+DDDvHPP/c6555z7ovlrmS+RSGQETINy5PwtBu6Al/KlB0yBAhgA9eckop77Fbh/T0x52AE+giXwHCTOSESC8Ze4X0f1QRTHVNEs2gHvwBuwWgMRaTAInoCk7rx0JguGwTJ4DzIhRWS4fpnxkqcVT5A1gsdgEUyAnKGIHP0Xub7RpJJdi6q/C+bBHOjX+PXz+Tz9Y4bxXXHMgnGwb5H6PjALFsA90MDPBf7eZxFrn/vfkgKu/tgOnpJWy7o4NDkGj22Bt2S92k1ep2bwCDwDN86gtX+CUfABFIMKWBxeswsecijVwgqMl2H8ol9RZjXtVgKfQBfHdT6kiDzXdzFeSTNGsiImDm6CTtAmR+dxlKE4A3pBN5g0uMPK9OvmuhnGUS3K/Tq5f1xqJueTEZm4G+BYs9lt8AI88NxlR/z3r8A3zdo6cJkT+cIJdT5iqnbMKl/TpFbsOhgC98FnMAZ+aXxl4yvs2jo/h9PEqCnfZLb+hqiZBmahLWgAOoaTt51sgxXDAdkEroKUqWqHhRU19E+RPxT128fnEkXYvoJURMxX0zR63kkSzNAqM5ZinCZLEf/LQJ3AjlJgToiAMcs1rtIgrrdmXHbCitJ6pq+gNkKOlNFRDirgMtWu88IUURdrcB0cUMSWzwAM7KYKz1JoYVHGQ4jYY7Z3TbrJxHZJM0UlDdbsUETRprVtTAJ/57tL2ucuqygD8tA2hU7I85eNfrDg02zrbYoohS2qfwIMAOZTmTsWD6+yAAAAAElFTkSuQmCC);
+}
+.speakers-page {
+  padding-bottom: 10rem;
+}
+.speakers-page .speakers-list,
+.schedule-page .schedule {
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+  border-left: 2px solid #d0d0d0;
+}
+.speakers-page .speakers-list .speaker-details header,
+.schedule-page .schedule .speaker-details header,
+.schedule-page .schedule .talk-details header,
+.speakers-page .speakers-list .talk-details header {
+  min-height: 5rem;
+}
+.speakers-page .speakers-list .speaker-details p,
+.speakers-page .speakers-list .talk-details p,
+.speakers-page .speakers-list .talk-details li,
+.schedule-page .schedule .talk-details p,
+.schedule-page .schedule .speaker-details p  {
+  padding: 0.6rem 3rem;
+  padding-left: 0;
+  margin: 0;
+  color: #726f6f;
+  text-align: justify;
+  width: 100%;
+}
+
+.speakers-page .speakers-list .talk-details li {
+padding-top: 0.1rem;
+padding-bottom: 0.1rem;
+}
+.speakers-page .speakers-list > article,
+.schedule-page .schedule > article {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+.speakers-page .speakers-list > article:after,
+.schedule-page .schedule > article:after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+.schedule-page .schedule > article:last-child,
+.speakers-page .speakers-list > article:last-child {
+  border-bottom: none;
+}
+.schedule-page .schedule h4,
+.speakers-page .speakers-list h4,
+.event-date {
+  color: #b3b5b6;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+.speakers-page .speakers-list .speaker-details,
+.schedule-page .schedule .speaker-details {
+  text-align: left;
+  position: relative;
+}
+.speakers-page .speakers-list .speaker-details > header,
+.schedule-page .schedule .speaker-details > header {
+  padding: 4rem 0;
+}
+.speakers-page .speakers-list .speaker-details > header > img,
+.schedule-page .schedule .speaker-details > header > img {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+.speakers-page .speakers-list .speaker-details > header h2,
+.schedule-page .schedule .speaker-details > header h2 {
+/*  font: 400 2rem 'League Gothic', Tahoma, sans-serif;
+  display: inline;*/
+padding: 0.3rem 0;
+}
+.speakers-page .speakers-list .speaker-details ul,
+.schedule-page .schedule .speaker-details ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 4rem;
+}
+.speakers-page .speakers-list .speaker-details ul li,
+.schedule-page .schedule .speaker-details ul li {
+  display: inline;
+  margin-right: 4rem;
+}
+.speakers-page .speakers-list .speaker-details ul li a,
+.schedule-page .schedule .speaker-details ul li a {
+  color: #a4a8a9;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding-left: 2.5rem;
+  line-height: 1.6rem;
+}
+.speakers-page .speakers-list .speaker-details ul li .homepage,
+.schedule-page .schedule .speaker-details ul li .homepage {
+  background: url("img/globe-icon.png") no-repeat;
+}
+.speakers-page .speakers-list .speaker-details ul li .twitter,
+.schedule-page .schedule .speaker-details ul li .twitter {
+  background: url("img/twitter-icon.png") no-repeat;
+  background-position-y: 0.1rem;
+}
+.speakers-page .speakers-list .speaker-details ul li .lanyrd,
+.schedule-page .schedule .speaker-details ul li .lanyrd {
+  background: url("img/lanyrd-icon.png") no-repeat;
+  background-position-y: 0.2rem;
+}
+.speakers-page .speakers-list .talk-details,
+.schedule-page .schedule .talk-details {
+  text-align: left;
+  position: relative;
+}
+.speakers-page .speakers-list .talk-details h3,
+.schedule-page .schedule .talk-details h3 {
+  margin: 0;
+  color: #000;
+  font-weight: bold;
+  padding-right: 3rem;
+  font-size: 1.4rem;
+}
+
+.schedule-page .schedule .talk-details h3 {
+  padding-left: 13rem;
+}
+
+.speakers-page .speakers-list article:before,
+.schedule-page .schedule article:before {
+  content: "";
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  position: absolute;
+  left: -0.83rem;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  background-color: #d0d0d0;
+  top: 2.8rem;
+}
+
+.speakers-page .speakers-list article:before {
+top: 2.2rem;
+}
+
+.speakers-page .speakers-list .talk-details,
+.speakers-page .speakers-list .speaker-details,
+.schedule-page .schedule .talk-details,
+.schedule-page .schedule .speaker-details {
+	padding-left: 2rem;
+}
+
+.event-date {
+   line-height: 2rem;
+   text-align: center;
+position: static;
+}
+
+.time {
+background: #eaeaea;
+padding: 0.5rem 0;
+border-radius: 3px;
+font-weight: bold;
+position: absolute;
+margin-right: 2rem;
+min-width: 10rem;
+left: 2.3rem;
+text-align: center;
+}
+
+.time:before {
+background: url("img/schedule-arrow-icon.png") no-repeat;
+content: "";
+display: block;
+position: absolute;
+width: 10px;
+height: 31px;
+left: -8px;
+top: 0;
+}
+
+.schedule-page .schedule .break h3 {
+   color: #afadad;
+   font-weight: 400;
+}
+
+.schedule-page .schedule h3 {
+   padding: 0.3rem 0;
+}
+
+section.schedule > h2 {
+margin: 0;
+}
+
+.venue,
+.register,
+.speakers-page {
+   padding-bottom: 5rem;
+}
+
+/* sponsors */
+
+.l-sponsors {
+	width: 100%;
+	color: #fff;
+	border-top: 1.2rem solid #eb212e;
+	background:	url("img/down-bg.jpg") no-repeat center top;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* 3.8. Sponsors title */
+
+.sponsors-title {
+	text-align: center;
+}
+
+.l-sponsors h1 {
+	margin: 60px 0 0 0;
+
+	color: #fff;	
+}
+
+.l-sponsors > header > h2 {
+	margin-bottom: 50px;
+	color: #d4d9de;
+}
+
+.get-pack-button {
+	border: 0;
+	float: none;
+        margin-right: 10%;
+}
+
+/* 3.8. Sponsors info */
+
+.sponsor-info {
+	padding: 40px 0 34px;
+        width: 90%;
+        margin: auto;
+	overflow: hidden;
+        clear: both;
+	margin-bottom: 4rem;
+
+	
+	border-top: 3px solid rgba(255, 255, 255, .1);
+	border-bottom: 3px solid rgba(255, 255, 255, .1);
+}
+
+.sponsor-info-text {
+	margin: 0;
+	
+	font-size: 1.6rem;
+	font-weight: 600px;
+	line-height: 24px;
+text-align: left;
+width: 100%;
+}
+
+.sponsor-info-more {
+	margin: 0;
+	
+	font-size: 1.2rem;
+	font-style: italic;
+	color: #d4d9de;
+text-align: left;
+width: 100%;
+}
+
+.sponsor-info-text > a,
+.sponsor-info-more > a {
+	text-decoration: underline;
+}
+
+.get-pl-pack {
+	float: right;
+	clear: right;
+	padding-top: 5px;
+
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+/* 3.9. Sponsors list */
+
+.sponsors-list {
+	overflow: auto;
+	margin: 1rem auto 0;
+	padding: 0;
+	width: 90%;
+	text-align: center;
+}
+
+.sponsor-item {
+	display: inline-block;
+	margin: 0 10px 20px;
+	padding: 0;
+	text-align: center;
+	background: url("../img/sponsor-blank.png.html");
+	list-style: none;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.sponsor-item a,
+.sponsor-item img {
+	display: block;
+}
+
+.sponsor-item > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.sponsor-blank-first {
+	display: block;
+
+	font: 40px 'League Gothic', Tahoma, sans-serif;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 0 #373c3e;
+}
+
+.sponsor-blank-second {
+	font-size: 14px;
+	color: #d4d9de;
+	font-weight: bold;
+}
+
+nav ul.previous-years li,
+nav .register-link {
+  background: #eb212e;
+  color: #fff;
+  padding: 10px 3rem;
+  border-radius: 4px;
+
+  line-height: 2.5rem;
+  display: block;
+width: 61%;
+margin: auto;
+text-align: center;
+}
+nav .previous-years a {
+	color: #fff;
+}
+
+
+.ft-video iframe {
+width: 320px;
+height: 184px;
+}
+.ft-video h1 {
+   color: #000;
+}
+
+.become-a-speaker {
+   margin-top: 3rem;
+}
+
+.talk-description {
+  display: block;
+}
+
+.schedule-btn {
+ display: none;
+}
+
+.talk-bio {
+   display: none;
+}
+
+article.about section.staff {
+	padding-top: 0;
+}
+section.staff ul {
+	max-width: 900px;
+	margin: 0 auto 2em;
+	padding: 0;
+	list-style-type: none;
+	line-height: 2em;
+}
+section.staff li {
+	display: inline;
+	padding: 0 1em;
+	white-space: nowrap;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .schedule-btn {
+    display: block;
+    background: url("img/down-arrow.png") no-repeat;
+    width: 54px;
+    height: 54px;
+    text-indent: -100000em;
+    border: 0;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+  }
+  .active-btn {
+    background: url("img/up-arrow.png") no-repeat;
+  }
+  .talk-description,
+  .talk-bio {
+   display: none;
+   overflow: hidden;
+  }
+  nav {
+    line-height: 8rem;
+    position: fixed;
+  }
+  nav h2 {
+    display: none;
+  }
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline;
+    padding: 0 10px;
+  }
+  nav ul li a {
+    cursor: pointer;
+  }
+  nav select {
+    display: none;
+  }
+.sponsor-info-text,
+.sponsor-info-more {
+	width: 60%;
+        padding-left: 10%;
+}
+nav ul.previous-years li,
+nav .register-link {
+  float: right;
+  margin: 1.7rem 10% 0 1rem;
+  padding: 10px 2rem;
+  line-height: 2.5rem;
+  display: block;
+  width: auto;
+  margin-right: 5%;
+}
+nav ul.previous-years li {
+	margin-right: 0;
+}
+nav ul.previous-years {
+	margin-right: 5%;
+}
+
+.event-date {
+position: absolute;
+width: 24%;
+padding-top: 3rem;
+padding-left: 5%;
+text-align: left;
+}
+
+  .cityguide article {
+    width: 25%;
+    float: left;
+  }
+  .list .left {
+    float: left;
+    width: 30%;
+  }
+  .list .left img {
+    padding-right: 5rem;
+  }
+  .list .right {
+    float: left;
+    width: 70%;
+  }
+  .speakers-page .speakers-list .talk-details,
+  .speakers-page .speakers-list .speaker-details,
+  .schedule-page .schedule .talk-details,
+  .schedule-page .schedule .speaker-details {
+    float: left;
+    width: 50%;
+  }
+  .speakers-page .speakers-list .speaker-details,
+.schedule-page .schedule .speaker-details {
+    float: right;
+    padding-left: 7rem;
+  }
+  .speakers-page .speakers-list .speaker-details > header,
+.schedule-page .schedule .speaker-details > header {
+    padding: 0;
+  }
+  .speakers-page .speakers-list .speaker-details header > img,
+.schedule-page .schedule .speaker-details header > img {
+    position: absolute;
+    left: -55px;
+    top: 0;
+  }
+  .schedule-page .schedule .speaker-details header > img {
+      left: -40px;
+      top: -15px;
+   }
+  .speakers-page .speakers-list .talk-details,
+  .schedule-page .schedule .talk-details {
+    padding-left: 15rem;
+    padding-right: 4%;
+  }
+  .speakers-page .speakers-list .talk-details {
+	padding-left: 5%;
+}
+
+  .schedule-page .schedule .talk-details,
+  .schedule-page .schedule .speaker-details {
+     width: 50%;
+  }
+
+.schedule-page .schedule .talk-details h3 {
+padding-left: 0;
+}
+  .speakers-page .speakers-list > article,
+  .schedule-page .schedule > article{
+    clear: both;
+  }
+  article h1 {
+    font: 400 8rem 'League Gothic', Tahoma, sans-serif;
+  }
+  article.hero .feature {
+    font: 400 3.5rem/1.5em 'League Gothic', Tahoma, sans-serif;
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+    margin: 0;
+    padding: 0 10%;
+    position: relative;
+    text-shadow: 0.4rem 0.4rem 0 rgba(212, 217, 222, 0.3);
+  }
+  article.speakers {
+    overflow: hidden;
+  }
+  article.speakers section {
+    clear: none;
+    width: 50%;
+    float: left;
+    min-height: 123px;
+  }
+  article.speakers section .left img {
+    width: 110px;
+    height: 110px;
+    position: relative;
+  }
+  article.speakers section .right {
+    padding-top: 3rem;
+  }
+  article.speakers section .right em {
+    font: 400 4rem/4rem 'League Gothic', Tahoma, sans-serif;
+  }
+  article.speakers section .right em a:hover {
+    color: #eb212e;
+  }
+  article.register .terms,
+  article.about .info-sheet {
+    overflow: hidden;
+    padding-bottom: 4rem;
+  }
+  article.register .terms .left,
+  article.about .info-sheet .left {
+    float: left;
+    width: 45%;
+  }
+  article.register .terms .right,
+  article.about .info-sheet .right {
+    float: right;
+    width: 45%;
+  }
+  .sponsors ul.gold-sponsors li img {
+    width: 280px;
+  }
+  .sponsors ul.silver-sponsors li img {
+    width: 180px;
+  }
+  .sponsors ul li {
+    float: left;
+    padding-right: 15px;
+    margin-bottom: 20px;
+  }
+  footer br {
+    display: none;
+  }
+  article.sponsors-page section.sponsorships > article {
+    float: left;
+    width: 33%;
+    padding-right: 2rem;
+    clear: none;
+  }
+  article h1,
+  section h1 {
+    font: 400 6rem 'League Gothic', Tahoma, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    text-shadow: 0.4rem 0.4rem 0 rgba(212, 217, 222, 0.3);
+  }
+  article h1:before,
+  section h1:before,
+  article h1:after,
+  section h1:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 50%;
+  }
+  article h1:before,
+  section h1:before {
+    left: -50px;
+  }
+  article h1:after,
+  section h1:after {
+    right: -50px;
+  }
+
+  article.hero h1:before,
+  article.hero h1:after {
+   display: none;
+  }
+
+ .time { 
+  margin-right: 0;
+ }
+.get-pack-button {
+   float: right;
+ }
+
+.ft-video iframe {
+   margin-top: 3rem;
+   width: 860px;
+   height: 485px;
+}
+}
+@media only screen and (min-width: 1280px) {
+  nav {
+    position: fixed;
+  }
+  article.speakers section {
+    width: 33%;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  article.speakers section {
+    width: 25%;
+  }
+}
